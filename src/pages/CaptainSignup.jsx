@@ -16,7 +16,7 @@ const CaptainSignup = () => {
         <img className='w-16 mb-2' src="assets/uber-driver-logo.png" alt="Uber" />
 
         <form onSubmit={submitHandler}>
-          <h3 className='text-lg font-medium mb-2'>What's your name?</h3>
+          <h3 className='text-lg font-medium mb-2'>What's our captain's name?</h3>
           <div className='flex gap-2 mb-6'>
             <input
               type="text"
@@ -35,7 +35,7 @@ const CaptainSignup = () => {
             />
           </div>
 
-          <h3 className='text-lg font-medium mb-2'>What's your email?</h3>
+          <h3 className='text-lg font-medium mb-2'>What's our captain's email?</h3>
           <input
             type="email"
             value={userData.email}
