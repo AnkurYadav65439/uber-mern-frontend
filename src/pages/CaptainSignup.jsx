@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 const CaptainSignup = () => {
-  const [userData, setUserData] = useState({ fullName: { firstName: '', lastName: '' }, email: '', password: '' });
+  const [userData, setUserData] = useState({ fullname: { firstname: '', lastname: '' }, email: '', password: '' });
 
   const submitHandler = (e) => {
     e.preventDefault();
     console.log(userData);
-    setUserData({ fullName: { firstName: '', lastName: '' }, email: '', password: '' });
+    setUserData({ fullname: { firstname: '', lastname: '' }, email: '', password: '' });
   }
 
   return (
@@ -20,16 +20,16 @@ const CaptainSignup = () => {
           <div className='flex gap-2 mb-6'>
             <input
               type="text"
-              value={userData.fullName.firstName}
-              onChange={(e) => setUserData({ ...userData, fullName: { ...userData.fullName, firstName: e.target.value } })}
+              value={userData.fullname.firstname}
+              onChange={(e) => setUserData({ ...userData, fullname: { ...userData.fullname, firstname: e.target.value } })}
               placeholder='First name'
               required
               className='bg-[#eeeeee] rounded px-4 py-2 w-1/2 text-lg placeholder:text-base'
             />
             <input
               type="text"
-              value={userData.fullName.lastName}
-              onChange={(e) => setUserData({ ...userData, fullName: { ...userData.fullName, lastName: e.target.value } })}
+              value={userData.fullname.lastname}
+              onChange={(e) => setUserData({ ...userData, fullname: { ...userData.fullname, lastname: e.target.value } })}
               placeholder='Last name'
               className='bg-[#eeeeee] rounded px-4 py-2 w-1/2 text-lg placeholder:text-base'
             />
