@@ -21,6 +21,7 @@ const UserLogin = () => {
       const data = response.data;
       setUser(data.user);
       console.log("login user : ", user);   //TODO: not working
+      localStorage.setItem('token', data.token);
       navigate('/home');
     }
     
